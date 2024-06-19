@@ -35,7 +35,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
           - name: REACT_APP_BACKEND_URL
-            value: "https://backend.singhritesh85.com/api/tasks"
+            value: "http://backend.singhritesh85.com/api/tasks"
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
